@@ -1,0 +1,5 @@
+The simplest route to understanding the length and timescales of diffusion arises from dimensional analysis of the diffusion equation and diffusion coefficient. Recall the linear form of Fick's second law (the diffusion equation) for a single diffusing species:
+
+
+The rapid voltage change is attributed to the Li+ diffusion in the electrolyte and the short-range interface, while the subsequent slow change is ascribed to the Li+ diffusion through the long-range particle and electrode 电压的快速变化归因于 Li+ 在电解质和短程界面中的扩散，而随后的缓慢变化则归因于 Li+ 在长程粒子和电极中的扩散。
+The slight rise of Li+ diffusion coefficient is probably owing to the increased defective structures and strains in the graphite facilitating the Li+ diffusion. Based on the lowest Li+ diffusion coefficient (2.64 × 10−10 cm2 s−1), the time for Li+ diffusing from the surface to the bulk center of graphite with a diameter of 10 μm is estimated to be about 7.89 min  $\tau =L^2/2D$
