@@ -1,7 +1,4 @@
-核心概念
-什么是第三方包
-非 Python 官方（非标准库）提供的、由社区/组织开发的代码库，用于扩展 Python 功能（如数据分析、Web 开发等）。
-包管理工具
+
 pip：官方推荐工具（安装：python -m ensurepip --upgrade）。
 conda：适合科学计算（通过 Anaconda/Miniconda 安装）。
 现代工具：pipenv（集成虚拟环境）、poetry（依赖管理更强大）。
@@ -92,6 +89,8 @@ safety check  # 检查当前环境包的安全性
 # 创建虚拟环境
 python -m venv project_env
 project_env\Scripts\activate  # Windows
+
+
 
 # 安装常用包
 pip install pandas flask requests -i https://mirrors.aliyun.com/pypi/simple/
