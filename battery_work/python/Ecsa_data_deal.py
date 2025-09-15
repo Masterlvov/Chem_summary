@@ -29,7 +29,10 @@ def ecsa(filepath,csvpath,labels):
         cdls = []
         for file in filepath[xx[j]:xx[j]+12]:  # 读取前10个文件
             print(file)
+            # 读取txt文件，假设文件是制表符（tab）分隔的，如果是其他分隔符，请相应修改
             df = pd.read_table(file, sep='\t')  # header=None
+            # print(df)
+            # df_filtered = df[df.iloc[:, 6] == '3.000000000000000E+000']
             file = np.array(df.iloc[1:, [0,1,2]])
             for i in range(len(file[:, 2])):
                 if (file[:, 2][i] == 2):
@@ -40,6 +43,10 @@ def ecsa(filepath,csvpath,labels):
                     Ewe_zero.append(list_b[2 * kk][i])
                     Ewe_zero_index.append(i)
                     ImA.append(list_b[2 * kk + 1][i])
+             # print(Ewe_zero_index)
+             # print(len(Ewe_zero_index))
+             # print(len(ImA))
+             kk += 1      
          for i in range(len(scan_voltage)):
              deli = abs(ImA[2 * i + 1] - ImA[2 * i]) / 2 / 46.6 / 100
              dIma.append(deli)
@@ -50,8 +57,8 @@ def ecsa(filepath,csvpath,labels):
          figdata = [scan_voltage, dIma, cdls]
          df = pd.DataFrame(figdata)
          df.to_excel((csvpath + (str(label)) + ('.xlsx')), sheet_name='Sheet1', index=False)
-        plt.plot(scan_voltage, dIma, 'b-', marker='o')
-        # plt.show()
+         plt.plot(scan_voltage, dIma, 'b-', marker='o')
+         # plt.show()
 
 
 def main ():
