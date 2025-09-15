@@ -25,7 +25,7 @@ def ecsa(filepath,csvpath,labels):
         ImA = []
         dIma = []
         p0 = [0.00060609, 0.000553]
-        scan_voltage = np.array([5,10,20,40,60,80,100,120,,140,160,180,200])
+        scan_voltage = np.array([5,10,20,40,60,80,100,120,140,160,180,200])
         cdls = []
         for file in filepath[xx[j]:xx[j]+12]:  # 读取前10个文件
             print(file)
@@ -62,8 +62,8 @@ def ecsa(filepath,csvpath,labels):
 
 
 def main ():
-    filepath = glob.glob('E:\data_ aalysis\data_analysis\python\电极结构data\ECSA\data\zzz\/*.txt')  # 修改为你的txt文件目录
-    csvpath = "E:\data_ analysis\data_analysis\python\电极结构data\ECSA\processing_data\zzz\\"
+    filepath = glob.glob('E:\data_alysis\data_analysis\python\电极结构data\ECSA\data\zzz\/*.txt')  # 修改为你的txt文件目录
+    csvpath = "E:\data_analysis\data_analysis\python\电极结构data\ECSA\processing_data\zzz\\"
     labels = ['R1-10','R1-1','R1-2','R1-3','R1-4','R1-5','R1-6','R1-7','R1-8','R1-9',
               'R2-10','R2-1','R2-2','R2-3', 'R2-4','R2-5','R2-6','R2-7','R2-8','R2-9',
               'R3-10','R3-1','R3-3','R3-4','R3-5', 'R3-6','R3-7','R3-8','R3-9']
