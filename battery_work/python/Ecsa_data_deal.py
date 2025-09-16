@@ -19,7 +19,7 @@ def ecsa(filepath,csvpath,labels):
         label = labels[j]
         l = 13   #扫速个数+1
         kk = 0
-        list_b = [[] for i in range(l * 2)
+        list_b = [[] for i in range(l * 2)]
         Ewe_zero = []
         Ewe_zero_index = []
         ImA = []
