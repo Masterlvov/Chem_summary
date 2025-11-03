@@ -4,6 +4,7 @@ A1:报错原因：路径出现中为字符，修改路径。
 
 Q2: jupyter notebook怎么修改默认目录？
 A2: 方法1：jupyter notebook --notebook-dir=/path/to/your/directory
+
 方法2：通过修改 Jupyter 的配置文件来永久更改默认打开的目录。以下是具体步骤：
 1. 生成 Jupyter 配置文件（如果不存在）
 在命令行中输入以下命令来生成 Jupyter 配置文件：
