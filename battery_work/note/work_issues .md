@@ -19,8 +19,6 @@ Windows：C:\Users\your_username\.jupyter\jupyter_notebook_config.py
 
 3. 修改配置文件中的目录设置
 在配置文件中找到以下行（可能被注释掉了，即以 # 开头）：
-
-# c.NotebookApp.notebook_dir = ''
+‘# c.NotebookApp.notebook_dir = ''’
 去掉行首的注释符号 #，并在引号中填入你想要设置的默认目录路径，例如：
-
 c.NotebookApp.notebook_dir = '/path/to/your/directory'
