@@ -1,0 +1,1 @@
+通量：flux = \iint F(x,y,z)\cdot \vec n dS
