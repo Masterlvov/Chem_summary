@@ -24,3 +24,7 @@ Windows：C:\Users\your_username\.jupyter\jupyter_notebook_config.py
 ‘# c.NotebookApp.notebook_dir = ''’
 去掉行首的注释符号 #，并在引号中填入你想要设置的默认目录路径，例如：
 c.NotebookApp.notebook_dir = '/path/to/your/directory'
+
+Q3: python镜像源安装
+A3: 命令行修改配置：pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple/，之后pip install packagename
+临时使用；pip install pandas -i https://pypi.tuna.tsinghua.edu.cn/simple/
