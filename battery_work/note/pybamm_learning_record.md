@@ -1,1 +1,2 @@
-
+- 仔细看了一下\pybamm\input\parameters\lithium_ion结构，data主要存放一些基本数据，比如石墨锂离子扩散系数随soc变化趋势；\lithium_ion\testing_only\electrolytes\lipf6_EC_DMMC_1_1_Landesfeind2019主要存放电解液参数拟合的规则（负极、正极等类似结构），.py文件传入对应参考文章的拟合参数，后续仿真时调用其他域生成的Cs等参数，计算对应的电导率等等. csv存放文章实测结果（供参考，拟合规则的来源）。
+- 
