@@ -78,4 +78,22 @@ plt.show()
 - 对数据进行滑动平均处理以提高信噪比
 
 - 添加容差范围（如1.35±0.005V范围内的平均值）
-
+#### 字符串方法
+1、str.join(iterable) —— 字符串的join
+这是字符串对象的方法，用于将一个可迭代对象（如列表、元组）中的元素用指定的字符串连接起来。
+```python
+words = ["hello", "world"]
+sentence = "".join(words)  # 正确！
+# 等价于：用空字符串 "" 把 words 里的每个元素拼起来
+# 结果是 "helloworld"
+```
+2、os.path.join(path, *paths) —— 路径拼接函数
+这是 os.path 模块中的一个函数，专门用来安全地拼接文件路径，会自动处理不同操作系统的路径分隔符（Windows 用 \，Linux/macOS 用 /）。
+```python
+import os
+full_path = os.path.join(data_path, file)
+这个 join 是函数，不是方法，它属于 os.path 模块。
+os.path.join("folder", "subfolder", "file.txt")
+# 在 Linux 上返回: folder/subfolder/file.txt
+# 在 Windows 上返回: folder\subfolder\file.txt
+```
