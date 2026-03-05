@@ -97,3 +97,23 @@ os.path.join("folder", "subfolder", "file.txt")
 # 在 Linux 上返回: folder/subfolder/file.txt
 # 在 Windows 上返回: folder\subfolder\file.txt
 ```
+### 清洗数据
+
+#### dataframe格式
+
+df.dropna() 删除的是整行（不是按列单独删），所以不会导致“列之间错位”
+df = df.dropna().reset_index(drop=True)作用是：df.dropna()：删除 DataFrame 中包含 任何缺失值（NaN） 的行（默认行为，即 how='any'）。
+如果你想只在所有列都为 NaN 时才删除，可以使用 df.dropna(how='all')。
+也可以指定特定列来判断是否删除，例如 df.dropna(subset=['col1', 'col2'])。
+.reset_index(drop=True)：由于删除行后索引可能不连续（比如原来是 0,1,2,5,6），这一步会重置索引为从 0 开始的连续整数，并且 drop=True 表示丢弃原来的索引，不保留为新列。
+赋值回 df：确保修改后的 DataFrame 被保存回变量 df（因为 dropna() 和 reset_index() 默认返回新对象，不就地修改原 DataFrame）。
+| 目标 | 推荐方法 |
+|------|--------|
+| 删除任何含 NaN 的行 | `df.dropna()` |
+| 仅当某些列有 NaN 时才删 | `df.dropna(subset=['col1', 'col2'])` |
+| 允许某些列有 NaN，但其他列必须完整 | 同上，用 `subset` 指定关键列 |
+| 不想删行，而是填充 | `df.fillna(...)` |
+
+#### txt等格式
+
+### 
