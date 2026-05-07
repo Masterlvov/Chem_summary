@@ -2,7 +2,7 @@
 Q1:python配置opencv环境后，读取图片，报错：findDecoder imread_('../Rawfig/xfc石墨2.0/21.jpg'):can't open/read file: check file path/integrity<br>
 A1:报错原因：路径出现中为字符，解决办法：修改为英文路径。
 
-Q2: jupyter notebook怎么修改默认目录？
+Q2: jupyter notebook怎么修改默认目录？<br>
 A2: 
 方法1：jupyter notebook --notebook-dir=/path/to/your/directory
 
